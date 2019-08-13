@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Serenity Dojo - Web Testing with WebDriver and Serenity BDD - CSS Locators</title>
+
+</head>
+<body>
+<div class="jumbotron">
+
+    <h1 class="display-4">Serenity Dojo Web Testing</h1>
+    <p class="lead">This page will help us experiment with CSS locators.</p>
+    <hr class="my-4">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card" id="perso">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Details</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <form id="name-and-email">
+                                        <div class="form-group">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <label for="firstName">First name</label>
+                                                        <input type="text" class="form-control" id="firstName"
+                                                               placeholder="Enter first name">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label for="surname">Surname</label>
+                                                        <input type="text" class="form-control"
+                                                               id="surname"
+                                                               placeholder="Enter surname">
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <label for="field122_email">Email address</label>
+                                                        <input type="email" class="form-control"
+                                                               id="field122_email" name="email"
+                                                               aria-describedby="emailHelp"
+                                                               placeholder="Enter email">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label for="field123_passwd">Password</label>
+                                                        <input type="password" class="form-control"
+                                                               id="field123_passwd" name="password"
+                                                               placeholder="Password">
+                                                        </small>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <label for="field127_street">Street name</label>
+                                                        <input class="form-control"
+                                                               id="field127_street"
+                                                               placeholder="Enter Street">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label for="field128_city">City name</label>
+                                                        <input class="form-control"
+                                                               id="field128_city"
+                                                               placeholder="Enter City">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <label>Country</label>
+                                                        <select name="country">
+                                                            <option>England</option>
+                                                            <option>France</option>
+                                                            <option>Ireland</option>
+                                                            <option>Italy</option>
+                                                            <option>Scotland</option>
+                                                            <option>Wales</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input class="btn btn-primary" type="submit"
+                                                               name="user-details">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="order-details" class="card-body">
+                        <h5 class="card-title">Order</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div id="item-prices">
+                                        <ul>
+                                            <li>Blue shirt: $<span class="price right-align item-cost">60</span></li>
+                                            <li>Gray pants: $<span class="price right-align item-cost">40</span></li>
+                                            <li>Postage: $<span class="price right-align postage-cost">5</span></li>
+                                            <li>Sales Tax: $<span class="price right-align sales-tax">20</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div id="total-price">
+                                        <span>Total price: </span> $<span class="amount"><strong>125</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary">Modify order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="color-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Colors</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div id="available-colors">
+                                        <span>Available</span>
+                                        <div class="color-list">
+                                            <span class="color badge badge-primary">Blue</span>
+                                            <span class="color badge badge-danger">Red</span>
+                                            <span class="color badge badge-warning">Yellow</span>
+                                            <span class="color badge badge-success">Green</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div id="unavailable-colors">
+                                        <span>Unavailable</span>
+                                        <div class="color-list">
+                                            <span class="color badge badge-info">Cyan</span>
+                                            <span class="color badge badge-secondary">Grey</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+
+</body>
+</html>
